@@ -1,0 +1,7 @@
+Project Goal
+To-Do List Application using React+Vite (Frontend) and Ruby on Rails (Backend) with:
+
+✅ User Authentication (Sign Up, Login, Logout)
+✅ CRUD Operations (Add, Edit, Delete Tasks)
+✅ Progress Tracker (Task Completion Percentage)
+✅ Task Prioritization (Sorting & Drag and Drop)
