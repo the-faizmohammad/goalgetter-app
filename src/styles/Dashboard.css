@@ -1,0 +1,182 @@
+.dashboard-container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #22223b, #1a1a2e);
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(255, 140, 0, 0.3);
+    text-align: center;
+    color: white;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 12px rgba(255, 140, 0, 0.3);
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.task-list li:hover {
+    background: rgba(255, 140, 0, 0.3);
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #bbb;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.task-input input,
+.task-input select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ff8c00;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.task-input select {
+    cursor: pointer;
+}
+
+.add-task-btn {
+    width: 100%;
+    max-width: 472px;
+    padding: 14px;
+    background: #ff007f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 0, 127, 0.5);
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.add-task-btn:hover {
+    background: #ff8c00;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255, 140, 0, 0.7);
+}
+
+.progress-bar {
+    width: 100%;
+    background: #444;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 25px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px rgba(255, 140, 0, 0.3);
+}
+
+.progress {
+    background: #4caf50;
+    height: 100%;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.4s ease-in-out;
+}
+
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.sort-buttons button {
+    background: #ff007f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-buttons button:hover {
+    background: #ff8c00;
+}
+
+.sort-buttons button.active {
+    background: #4caf50;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .task-list li {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .task-input {
+        max-width: 100%;
+    }
+
+    .add-task-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-input {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .task-input input,
+    .task-input select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 22px;
+    }
+}
