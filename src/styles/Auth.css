@@ -1,0 +1,35 @@
+.auth-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.auth-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    background: #e8f6f3;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    background: #fdecea;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

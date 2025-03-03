@@ -1,0 +1,198 @@
+.home {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background: #1a1a2e;
+}
+
+.hero {
+    background: linear-gradient(135deg, #ff8c00, #ff007f);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(255, 140, 0, 0.3);
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 650px;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.cta-btn {
+    background: #ff007f;
+    color: white;
+    padding: 14px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #ff8c00;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.7);
+}
+
+.benefits {
+    padding: 80px 20px;
+    background: #22223b;
+    color: white;
+}
+
+.benefits h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff8c00, #ff007f);
+    box-shadow: 0px 6px 15px rgba(255, 140, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(255, 140, 0, 0.5);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 18px;
+    color: #f5f6fa;
+}
+
+.how-it-works {
+    background: #2c3e50;
+    padding: 80px 20px;
+    color: black;
+}
+
+.how-it-works h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(255, 140, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+}
+
+.step span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff007f;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 55vh;
+        padding: 15px;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        font-size: 18px;
+        padding: 12px 26px;
+    }
+}
